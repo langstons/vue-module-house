@@ -1,0 +1,33 @@
+.nav__link {
+	position: relative;
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+	color: $color-black;
+	font-size: $text-xl;
+	font-weight: 400;
+	line-height: 1.5;
+	text-transform: uppercase;
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 1px;
+		background-color: $color-black;
+		transition: $transition-normal;
+	}
+	&:hover {
+		&::before {
+			width: 100%;
+		}
+	}
+}
+
+// Media 992px =====>
+@include min-lg {
+	.nav__link {
+		font-size: $text-sm;
+	}
+}

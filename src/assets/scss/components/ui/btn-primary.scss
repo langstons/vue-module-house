@@ -1,0 +1,35 @@
+.btn-primary {
+	padding: 8px 0;
+	max-width: 164px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid $color-black;
+	border-radius: 32px;
+	transition: $transition-normal;
+	&__text {
+		text-align: center;
+		color: $color-black;
+		font-size: $text-sm;
+		font-weight: 300;
+		line-height: 1.5;
+		transition: $transition-normal;
+	}
+	&:hover {
+		background-color: $color-black;
+		.btn-primary__text {
+			color: $color-white;
+		}
+	}
+}
+
+// Media 768px =====>
+@include min-md {
+	.btn-primary {
+		padding: 13px 0;
+		&__text {
+			font-size: $text-2xl;
+		}
+	}
+}

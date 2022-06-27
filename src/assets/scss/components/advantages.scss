@@ -1,0 +1,129 @@
+.advantages {
+	padding: 48px 0 0;
+	.section-title {
+		margin: 0 0 16px;
+	}
+	&__image {
+		position: relative;
+		max-height: 254px;
+		min-height: 254px;
+		margin: 48px 0 0;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	&-card {
+		&:not(:last-child) {
+			border-bottom: 1px solid $color-border;
+		}
+		&__title {
+			padding: 16px 24px;
+			position: relative;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			text-align: left;
+			color: $color-black;
+			font-size: $text-base;
+			font-weight: 400;
+			line-height: 1.5;
+		}
+		&__icon {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			fill: black;
+			max-width: 12px;
+			min-width: 12px;
+			max-height: 12px;
+			min-height: 12px;
+			transition: $transition-normal;
+		}
+		&__number {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			white-space: nowrap;
+			color: $color-black;
+			font-size: $text-xs;
+			font-weight: 300;
+			line-height: 1.5;
+		}
+		&__description {
+			padding: 0 24px 16px;
+			color: $color-black;
+			font-size: $text-sm;
+			font-weight: 300;
+			line-height: 1.25;
+		}
+	}
+}
+
+// Media 992px =====>
+@include min-lg {
+	.advantages {
+		padding: 472px 0 0;
+		.container {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		.section-title {
+			margin: 0 64px 0 0;
+		}
+		&__list {
+			margin: 12px 0 0;
+			max-width: 848px;
+		}
+		&-card {
+			&__title {
+				padding: 40px 32px;
+				font-size: $text-2xl;
+			}
+			&__number {
+				font-size: $text-lg;
+			}
+			&__icon {
+				max-width: 16px;
+				min-width: 16px;
+				max-height: 16px;
+				min-height: 16px;
+			}
+			&__description {
+				padding: 0 32px 40px;
+				font-size: $text-lg;
+			}
+		}
+		&__image {
+			max-height: 480px;
+			min-height: 480px;
+			margin: 148px 0 0 0;
+		}
+	}
+}
+
+// Media 1280px =====>
+@include min-xl {
+	.advantages {
+		&-card {
+			&__title {
+				padding: 40px 64px;
+			}
+			&__description {
+				padding: 0 64px 40px;
+			}
+		}
+		&__image {
+			max-height: 724px;
+			min-height: 724px;
+		}
+	}
+}

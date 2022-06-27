@@ -1,0 +1,27 @@
+@import './helpers/variables';
+@import './helpers/mixins';
+@import './base/fonts';
+@import './base/normalize';
+@import './base/global';
+
+// Import UI
+@import './components/UI/burger';
+@import './components/UI/nav-link';
+@import './components/UI/request-field';
+@import './components/UI/btn-primary';
+
+// Import site-components
+@import './components/header';
+@import './components/footer';
+@import './components/UI/products-card';
+
+// Home page
+@import './components/hero';
+@import './components/about';
+@import './components/advantages';
+@import './components/stages';
+@import './components/request';
+
+// Contacts page
+@import './components/contacts';
+@import './components/UI/contacts-card';

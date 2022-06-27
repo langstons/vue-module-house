@@ -1,0 +1,32 @@
+.contacts-card {
+	&__title {
+		margin: 0 0 20px;
+		font-family: $font-RF-Dewi-Expanded;
+		color: $color-black;
+		font-size: $text-base;
+		font-weight: 700;
+		line-height: 1.25;
+		text-transform: uppercase;
+	}
+	&__description {
+		color: $color-black;
+		font-size: $text-sm;
+		font-weight: 300;
+		line-height: 1.25;
+		&:not(:last-child) {
+			margin: 0 0 16px;
+		}
+	}
+}
+
+// Media 576px =====>
+@include min-sm {
+	.contacts-card {
+		&__title {
+			font-size: $text-xl;
+		}
+		&__description {
+			font-size: $text-lg;
+		}
+	}
+}

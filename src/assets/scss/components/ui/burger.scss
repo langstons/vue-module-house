@@ -1,0 +1,41 @@
+.burger {
+	z-index: 100;
+	position: relative;
+	max-width: 32px;
+	min-width: 32px;
+	max-height: 32px;
+	min-height: 32px;
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: $color-black;
+		transition: $transition-normal;
+	}
+	&::before {
+		top: 10px;
+	}
+	&::after {
+		top: 19px;
+	}
+	&_active {
+		&::before {
+			top: 50%;
+			transform: translateY(-50%) rotate(45deg);
+		}
+		&::after {
+			top: 50%;
+			transform: translateY(-50%) rotate(-45deg);
+		}
+	}
+}
+
+// Media 992px =====>
+@include min-lg {
+	.burger {
+		display: none;
+	}
+}

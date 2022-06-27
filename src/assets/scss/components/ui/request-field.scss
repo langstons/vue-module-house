@@ -1,0 +1,29 @@
+.request-form__field {
+	margin: 0;
+	padding: 12px 12px 8px;
+	width: 100%;
+	color: $color-white;
+	font-size: $text-sm;
+	font-weight: 300;
+	line-height: 1.5;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid $color-white;
+	border-radius: 0;
+	&::placeholder {
+		color: #373737;
+	}
+	&.request-form__message {
+		resize: none;
+		overflow: hidden;
+	}
+}
+
+// Media 992px =====>
+@include min-lg {
+	.request-form__field {
+		padding: 32px 24px;
+		font-size: $text-xl;
+	}
+}

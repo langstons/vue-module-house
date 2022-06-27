@@ -1,0 +1,128 @@
+.stages {
+	padding: 48px 0;
+	.section-title {
+		margin: 0 0 32px;
+	}
+	&__wrapper {
+		&:not(:last-child) {
+			margin: 0 0 32px;
+		}
+	}
+	&-card {
+		&__title {
+			padding: 0 0 16px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			color: $color-black;
+			font-size: $text-base;
+			font-weight: 400;
+			line-height: 1.5;
+			border-bottom: 1px solid $color-border;
+		}
+		&__number,
+		&__time {
+			white-space: nowrap;
+			color: $color-black;
+			font-size: $text-xs;
+			font-weight: 300;
+			line-height: 1.5;
+		}
+		&__number {
+			margin: 0 12px 0 0;
+		}
+		&__time {
+			margin: 0 0 0 auto;
+		}
+		&__description {
+			margin: 16px 0 0;
+			color: $color-black;
+			font-size: $text-sm;
+			font-weight: 300;
+			line-height: 1.25;
+		}
+	}
+}
+
+// Media 768px =====>
+@include min-md {
+	.stages {
+		overflow: hidden;
+		.section-title {
+			margin: 0 0 96px;
+		}
+		&__table {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: stretch;
+			justify-content: flex-start;
+		}
+		&__wrapper {
+			padding: 48px;
+			flex: 0 0 50%;
+			max-width: 50%;
+			margin: 50%;
+			&:not(:last-child) {
+				margin: 0;
+			}
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+}
+
+// Media 992px =====>
+@include min-lg {
+	.stages {
+		padding: 148px 0;
+		&__table {
+			margin: -80px;
+		}
+		&__wrapper {
+			padding: 80px;
+		}
+		&-card {
+			&__title {
+				font-size: $text-2xl;
+			}
+			&__number {
+				font-size: $text-lg;
+			}
+			&__time {
+				font-size: $text-base;
+			}
+			&__description {
+				font-size: $text-lg;
+			}
+		}
+	}
+}
+
+// Media 1280px =====>
+@include min-xl {
+	.stages {
+		.section-title {
+			margin: 0 0 180px;
+		}
+		&__table {
+			padding: 0 164px;
+			margin: -64px -64px;
+		}
+		&__wrapper {
+			padding: 64px 64px;
+		}
+	}
+}
+
+// Media 1280px =====>
+@include min-xxl {
+	.stages {
+		&__table {
+			margin: -64px -132px;
+		}
+		&__wrapper {
+			padding: 64px 132px;
+		}
+	}
+}

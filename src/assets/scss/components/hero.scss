@@ -1,0 +1,55 @@
+.hero {
+	padding: 100px 0 48px;
+	.site-title {
+		white-space: nowrap;
+		margin: 0 0 24px;
+		span {
+			display: block;
+		}
+	}
+	.site-description {
+		display: flex;
+		align-items: flex-end;
+		.arrow-link {
+			margin: 0 0 0 16px;
+		}
+	}
+}
+
+// Media 992px =====>
+@include min-lg {
+	.hero {
+		padding: 248px 0 96px;
+		.site-title {
+			margin: 0 64px 0 0;
+		}
+		.site-description {
+			margin: 0 0 12px;
+		}
+		.container {
+			display: flex;
+			align-items: flex-end;
+			justify-content: space-between;
+		}
+	}
+}
+
+// Media 1280px =====>
+@include min-xl {
+	.hero {
+		.site-title {
+			margin: 0 112px 0 0;
+		}
+		.site-description {
+			.arrow-link {
+				margin: 0 0 0 64px;
+				.svg-sprite {
+					max-width: 32px;
+					min-width: 32px;
+					max-height: 32px;
+					min-height: 32px;
+				}
+			}
+		}
+	}
+}

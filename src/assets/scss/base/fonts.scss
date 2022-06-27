@@ -1,0 +1,43 @@
+@font-face {
+	font-family: "RF Dewi Extended";
+	font-display: swap;
+	src: url("/public/assets/fonts/RFDewiExtended-Light.woff2") format("woff2"),
+	url("/public/assets/fonts/RFDewiExtended-Light.woff") format("woff"),
+	url("/public/assets/fonts/RFDewiExtended-Light.ttf") format("ttf"),
+	url("/public/assets/fonts/RFDewiExtended-Light.eot") format("eot");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "RF Dewi Extended";
+	font-display: swap;
+	src: url("/public/assets/fonts/RFDewiExtended-Regular.woff2") format("woff2"),
+	url("/public/assets/fonts/RFDewiExtended-Regular.woff") format("woff"),
+	url("/public/assets/fonts/RFDewiExtended-Regular.ttf") format("ttf"),
+	url("/public/assets/fonts/RFDewiExtended-Regular.eot") format("eot");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "RF Dewi Extended";
+	font-display: swap;
+	src: url("/public/assets/fonts/RFDewiExpanded-Regular.woff2") format("woff2"),
+	url("/public/assets/fonts/RFDewiExpanded-Regular.woff") format("woff"),
+	url("/public/assets/fonts/RFDewiExpanded-Regular.ttf") format("ttf"),
+	url("/public/assets/fonts/RFDewiExpanded-Regular.eot") format("eot");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "RF Dewi Expanded";
+	font-display: swap;
+	src: url("/public/assets/fonts/RFDewiExpanded-Bold.woff2") format("woff2"),
+	url("/public/assets/fonts/RFDewiExpanded-Bold.woff") format("woff"),
+	url("/public/assets/fonts/RFDewiExpanded-Bold.ttf") format("ttf"),
+	url("/public/assets/fonts/RFDewiExpanded-Bold.eot") format("eot");
+	font-weight: 700;
+	font-style: normal;
+}
